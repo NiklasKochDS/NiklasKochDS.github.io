@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dein Name – Data Science Freelancer</title>
+  <title>Niklas Koch – Data Science Freelancer</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
@@ -58,13 +58,13 @@
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-gray-800 mb-6">📬 Kontakt</h2>
       <p class="text-gray-600 mb-6">Lass uns über dein Projekt sprechen! Schreib mir einfach eine E-Mail:</p>
-      <a href="mailto:deinemail@example.com" class="text-xl font-semibold text-blue-600 hover:underline">deinemail@example.com</a>
+      <a href="mailto:deinemail@example.com" class="text-xl font-semibold text-blue-600 hover:underline">niklaskoch4@googlemail.com</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-300 py-6 text-center text-sm">
-    © 2025 Dein Name – Data Science Freelancer
+    © 2025 Niklas Koch – Data Science Freelancer
   </footer>
 
 </body>
