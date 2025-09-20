@@ -1,61 +1,63 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grundverständnis von IT — Niklas Koch</title>
-  <meta name="description" content="Grundverständnis von IT: Lerne, wie Computer funktionieren, Daten verarbeitet werden, und die Binärsprache arbeitet.">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grundverständnis von IT – Niklas Koch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="it_grundlagen.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="header">
     <div class="container nav-container">
       <div class="logo">Niklas Koch</div>
-      <nav class="main-nav">
+      <nav>
         <a href="index.html#angebote">Angebote</a>
+        <a href="index.html#termin">Termin buchen</a>
         <a href="index.html#kontakt">Kontakt</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Grundverständnis von IT</h1>
-        <p>Verstehe, wie Computer arbeiten, wie Daten gespeichert werden, CPU, RAM, Speicher und Binärsprache.
-           Ideal für Einsteiger und Schüler, die ein solides IT-Grundwissen aufbauen möchten.</p>
-        <ul>
-          <li>Wie Computer intern funktionieren</li>
-          <li>Speicher & Datenverarbeitung</li>
-          <li>Binärsprache & Zahlensysteme</li>
-          <li>Grundlagen von Netzwerken</li>
-        </ul>
-        <p><strong>Dauer:</strong> 6 × 45 Minuten Sessions<br>
-           <strong>Kosten:</strong> 180 € (inkl. Material)</p>
-      </div>
-      <div class="hero-image">
-        <img src="it_grundlagen.jpg" alt="Symbolbild IT-Grundlagen">
-      </div>
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Grundverständnis von IT</h1>
+      <p>Verstehen, wie Computer arbeiten, wie Daten gespeichert werden,
+         CPU, RAM, Speicher und Binärsprache. Ideal für Einsteiger und Schüler,
+         die ein solides IT-Grundwissen aufbauen möchten.</p>
+    </div>
+    <div class="hero-img">
+      <img src="it_grundlagen.jpg" alt="IT-Grundlagen Symbolbild">
     </div>
   </section>
 
-  <main class="container">
-    <section id="kontakt" class="section contact">
+  <section class="content container">
+    <div class="learn">
+      <h2>Was du lernen wirst</h2>
+      <ul>
+        <li>Wie Computer funktionieren</li>
+        <li>Speicherprozesse verstehen</li>
+        <li>Binärsprache & Zahlensysteme</li>
+        <li>Grundlegendes Verständnis von Daten</li>
+      </ul>
+      <p class="details"><strong>Dauer:</strong> 6 × 45 Minuten<br>
+         <strong>Kosten:</strong> 180 €</p>
+    </div>
+
+    <div class="contact">
       <h2>Kontakt</h2>
-      <p>Fragen oder Interesse an diesem Kurs? Schreiben Sie mir direkt und ich melde mich per Mail:</p>
-      <form class="contact-form" action="mailto:koch.niklas.nachhilfe@gmail.com" method="GET" enctype="text/plain">
+      <form action="mailto:koch.niklas.nachhilfe@gmail.com" method="GET" enctype="text/plain">
         <input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="E-Mail" required>
         <textarea name="message" rows="5" placeholder="Nachricht" required></textarea>
-        <button class="btn btn-primary" type="submit">Nachricht senden</button>
+        <button type="submit">Nachricht senden</button>
       </form>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Niklas Koch — Nachhilfe Informatik</p>
+      &copy; <span id="year"></span> Niklas Koch — Nachhilfe Informatik
     </div>
   </footer>
 
