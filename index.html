@@ -1,4 +1,10 @@
-<meta name="description" content="Nachhilfe in Informatik bis Abitur: Programmieren mit Python, IT-Grundlagen, Internet-Grundlagen, Crash-Kurs KI/ML. Termine online buchen." />
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lerne Informatik — mit Niklas Koch</title>
+  <meta name="description" content="Nachhilfe in Informatik bis Abitur: Programmieren mit Python, IT-Grundlagen, Internet-Grundlagen, Crash-Kurs KI/ML. Termine online buchen." />
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -22,54 +28,35 @@
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-container">
   <header class="site_header">
     <div class="container nav_container">
       <div class="logo">Niklas Koch</div>
-      <nav class="main-nav">
       <nav class="main_nav">
         <a href="#angebote">Angebote</a>
         <a href="#termin">Termin buchen</a>
         <a href="#kontakt">Kontakt</a>
-@@ -21,13 +40,13 @@
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
     <div class="container hero_content">
       <div class="hero_text">
         <h1>Informatik - Programmieren - Künstliche Intelligenz</h1>
         <p>Individuelle Unterstützung in Programmierung, IT-Grundlagen, Internet-Technologien und KI/ML. Flexibel online oder vor Ort!</p>
         <a class="btn btn-primary" href="#termin">Jetzt Kennenlern-Termin vereinbaren!</a>
       </div>
-      <div class="hero-image">
       <div class="hero_image">
         <img src="profil.jpg" alt="Porträt von Niklas Koch">
         <p><strong>Bachelor of Science: Wirtschaftsinformatik</strong></p>
       </div>
-@@ -38,30 +57,41 @@ <h1>Informatik - Programmieren - Künstliche Intelligenz</h1>
+    </div>
+  </section>
+
+  <main class="container">
     <section id="angebote" class="section">
       <h2>Meine Angebote</h2>
       <p>Ich biete sowohl flexibel buchbare Einzelstunden an, als auch spezialisierte Kurse oder Workshops zu bestimmten Themen. Inhalte und Tempo können individuell und auf Ihre Bedürfnisse angepasst werden.</p>
-      <div class="courses-grid">
-        <article class="course-card">
-          <h3><a href="programmieren_python.html">Programmieren lernen mit Python</a></h3>
-          <p>Von Grundlagen von objektorientierter Programmierung mit Python: Variablen, Funktionen, Klassen und typische Konzepte der Programmierung. Buchbar als Einzelkurs oder Halbtags-Workshop für Unternehmen.</p>
-        </article>
-        <article class="course-card">
-          <h3><a href="it_grundlagen.html">Grundverständnis der IT und des Internet</a></h3>
-          <p>Verstehen, wie Computer arbeiten, wie Daten gespeichert werden, CPU, RAM, Speicher und Binärsprache, wahlweise mit einem Exkurs über die Funktionsweise des Internets. Ideal für Einsteiger und Schüler, die ein solides IT-Grundwissen aufbauen möchten.</p>
-        </article>
-        <article class="course-card">
-          <h3><a href="ki_ml.html">Crash-Kurs KI & Machine Learning</a></h3>
-          <p>Einführung in KI-Begriffe, neuronale Netze und einfache praktische Beispiele ohne großes Mathevorwissen. Grundkenntnisse von IT oder Programmierung wünschenswert, aber nicht notwendig.</p>
-        </article>
-        <article class="course-card">
-          <h3><a href="einzelstunden.html">Flexible Einzelstunden</a></h3>
-          <p>Flexible Einzelstunden für gezieltes Lernen oder Vertiefen einzelner Themen, ohne einen ganzen Kurs buchen zu müssen.</p>
-        </article>
       <div class="courses_grid">
         <a href="programmieren_python.html" class="course_card">
           <div class="course_card_inner">
@@ -104,17 +91,31 @@
     <section id="termin" class="section booking">
       <h2>Terminbuchung</h2>
       <p>Nutzen Sie das folgende Buchungstool, um direkt einen Termin zum Kennenlernen zu vereinbaren:</p>
-      <div class="booking-embed">
       <div class="booking_embed booking_embed_full">
         <iframe src="https://app.simplymeet.me/niklaskochnachhilfe" style="width:100%;max-width:800px;height:500px;border:0;border-radius:12px;"></iframe>
       </div>
     </section>
-@@ -78,7 +108,7 @@ <h2>Kontakt</h2>
+
+    <section id="kontakt" class="section contact">
+      <h2>Kontakt</h2>
+      <p>Fragen, besondere Wünsche oder zu scheu für ein Telefonat? Schreiben Sie mir gerne direkt und ich melde mich per Mail:</p>
+      <form class="contact-form" action="mailto:koch.niklas.nachhilfe@gmail.com" method="GET" enctype="text/plain">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="E-Mail" required>
+        <textarea name="message" rows="5" placeholder="Nachricht" required></textarea>
+        <button class="btn btn-primary" type="submit">Nachricht senden</button>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer">
   <footer class="site_footer">
     <div class="container">
       <p>&copy; <span id="year"></span> Niklas Koch — Nachhilfe Informatik</p>
     </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
