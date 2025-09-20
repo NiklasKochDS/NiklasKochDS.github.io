@@ -109,10 +109,10 @@ body {
   margin-bottom: 20px;
 }
 
-/* Courses Grid */
+/* Courses Grid - jetzt 4 Cards */
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 gleichmäßige Spalten auf großen Screens */
+  grid-template-columns: repeat(4, 1fr); /* 4 gleichmäßige Spalten */
   gap: 20px;
 }
 
@@ -181,13 +181,13 @@ body {
 /* Responsive Anpassungen */
 @media (max-width: 1200px) {
   .courses-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 Spalten auf mittleren Screens */
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf mittleren Screens */
   }
 }
 
 @media (max-width: 768px) {
   .courses-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf Tablets */
+    grid-template-columns: 1fr; /* 1 Spalte auf Tablets & Smartphones */
   }
   .hero-content {
     grid-template-columns: 1fr;
