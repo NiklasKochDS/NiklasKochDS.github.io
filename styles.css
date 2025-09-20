@@ -73,7 +73,7 @@ body {
 
 .hero_image img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   object-fit: cover;
@@ -147,14 +147,18 @@ body {
 }
 
 /* Booking Embed */
+.booking_embed {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .booking_embed iframe {
   width: 100%;
   max-width: 800px;
   height: 600px;
   border: 0;
   border-radius: 12px;
-  display: block;
-  margin: 0 auto;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
@@ -195,13 +199,13 @@ body {
 /* Responsive Anpassungen */
 @media (max-width: 1200px) {
   .courses_grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 Spalten auf mittleren Screens */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .courses_grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf Tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
   .hero_content {
     grid-template-columns: 1fr;
@@ -215,6 +219,6 @@ body {
 
 @media (max-width: 480px) {
   .courses_grid {
-    grid-template-columns: 1fr; /* 1 Spalte auf Smartphones */
+    grid-template-columns: 1fr;
   }
 }
