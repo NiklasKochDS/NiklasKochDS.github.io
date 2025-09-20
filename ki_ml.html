@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KI & Machine Learning — Niklas Koch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">Niklas Koch</div>
+      <nav class="main-nav">
+        <a href="index.html">Startseite</a>
+        <a href="programmieren-python.html">Python</a>
+        <a href="it-grundlagen.html">IT-Grundlagen</a>
+        <a href="internet-grundlagen.html">Internet</a>
+        <a href="ki-ml.html">KI & ML</a>
+        <a href="einzelstunden.html">Flexible Stunden</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>KI & Machine Learning</h1>
+        <p>Einführung in künstliche Intelligenz und Machine Learning. Grundlagen für Einsteiger ohne Vorkenntnisse.</p>
+      </div>
+      <div class="hero-image">
+        <img src="images/ki-ml-course.jpg" alt="KI & ML">
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="section">
+      <h2>Kursinhalte</h2>
+      <ul>
+        <li>Grundlagen der künstlichen Intelligenz</li>
+        <li>Einführung in Machine Learning</li>
+        <li>Beispiele aus der Praxis</li>
+        <li>Einsteigerprojekte</li>
+        <li>Ethik & Sicherheit</li>
+      </ul>
+      <p><strong>Dauer:</strong> 7 x 45 Minuten Sessions</p>
+      <p><strong>Preis:</strong> 200€</p>
+      <a class="btn btn-primary" href="#kontakt">Jetzt Kontakt aufnehmen</a>
+    </section>
+
+    <section id="kontakt" class="section">
+      <h2>Kontaktformular</h2>
+      <p>Schreibe uns direkt eine Nachricht, um Fragen zu klären oder deinen Kurs anzumelden:</p>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Dein Name" required>
+        <input type="email" name="email" placeholder="Deine E-Mail" required>
+        <textarea name="message" placeholder="Deine Nachricht" rows="6" required></textarea>
+        <button class="btn btn-primary" type="submit">Nachricht senden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Niklas Koch — Nachhilfe Informatik</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
