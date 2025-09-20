@@ -164,7 +164,8 @@ body {
 
 /* Kontaktformular */
 .contact_form {
-  display: grid;
+  display: flex;
+  flex-direction: column; /* Inputs untereinander */
   gap: 16px;
   max-width: 600px;
   margin: 20px auto 0 auto; /* zentriert */
@@ -172,13 +173,19 @@ body {
 
 .contact_form input,
 .contact_form textarea {
+  width: 100%; /* volle Breite */
   padding: 14px;
   border-radius: 8px;
   border: 1px solid #cbd5e1;
   font-size: 16px;
   background: #ffffff;
   color: #1e293b;
-  width: 100%;
+}
+
+.contact_form button {
+  width: fit-content; /* Button passt zur Textgröße */
+  align-self: flex-start; /* Links ausgerichtet */
+  padding: 12px 24px;
 }
 
 .contact_form input:focus,
