@@ -112,7 +112,7 @@ body {
 /* Courses Grid */
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(5, 1fr); /* 5 gleichmäßige Spalten auf großen Screens */
   gap: 20px;
 }
 
@@ -178,8 +178,17 @@ body {
   margin-top: 40px;
 }
 
-/* Responsive */
-@media (max-width:768px) {
+/* Responsive Anpassungen */
+@media (max-width: 1200px) {
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 Spalten auf mittleren Screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten auf Tablets */
+  }
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
@@ -188,7 +197,10 @@ body {
     order: -1;
     margin-bottom: 20px;
   }
-  .main-nav a {
-    margin-left: 12px;
+}
+
+@media (max-width: 480px) {
+  .courses-grid {
+    grid-template-columns: 1fr; /* 1 Spalte auf Smartphones */
   }
 }
