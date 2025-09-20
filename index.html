@@ -1,109 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Niklas Koch – Data Science Freelancer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nachhilfe Informatik — [Dein Name]</title>
+  <meta name="description" content="Nachhilfe in Informatik bis Abitur: Programmieren mit Python, IT-Grundlagen, Internet-Grundlagen, Crash-Kurs KI/ML. Termine online buchen." />
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
-
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold text-blue-600">Niklas Koch</h1>
-      <nav class="space-x-6 font-medium">
-        <a href="#home" class="hover:text-blue-600">Home</a>
-        <a href="#leistungen" class="hover:text-blue-600">Leistungen</a>
-        <a href="#kontakt" class="hover:text-blue-600">Kontakt</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="bg-gradient-to-r from-blue-50 to-blue-100 py-20">
-    <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-6 gap-10">
-      
-      <!-- Text -->
-      <div class="flex-1 text-center md:text-left">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">
-          Data Science & Automatisierung<br>
-          <span class="text-blue-600">für dein Business</span>
-        </h2>
-        <p class="mt-4 text-lg text-gray-600">
-          Ich helfe Unternehmen, ihre Daten verständlich & nutzbar zu machen – von der Bereinigung bis zum interaktiven Dashboard.
-        </p>
-        <a href="#kontakt" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
-          Jetzt Kontakt aufnehmen
-        </a>
+<body>
+  <div class="container">
+    <header>
+      <div class="portrait">
+        <!-- Bitte ersetze images/portrait.jpg mit deinem eigenen Foto -->
+        <img src="images/portrait.jpg" alt="Porträt von [Dein Name]" />
       </div>
-
-      <!-- Bild -->
-      <div class="flex-1 flex justify-center">
-        <img src="profil.jpg" alt="Profilbild" class="rounded-2xl shadow-lg max-w-xs md:max-w-sm">
+      <div>
+        <h1>[Dein Name] — Nachhilfe Informatik (bis Abitur)</h1>
+        <p class="lead">Ich biete individuelle Nachhilfe in Informatik: von Programmieren mit Python bis zu Grundlagen von IT, Internet und einer Einführung in Künstliche Intelligenz. Flexible Termine, Online oder vor Ort (auf Anfrage).</p>
+        <nav>
+          <a class="btn" href="#angebote">Angebote</a>
+          <a class="alt" href="#termin">Termin buchen</a>
+          <a class="alt" href="#kontakt">Kontakt</a>
+        </nav>
       </div>
+    </header>
 
-    </div>
-  </section>
+    <main>
+      <section id="angebote" class="card">
+        <h2>Meine Angebote</h2>
+        <p class="small">Du kannst einzelne Sitzungen buchen oder komplette Kurse. Ich passe Tempo und Inhalte an dein Niveau an (Schüler:innen, Abiturvorbereitung, Crash-Kurse).</p>
 
-  <!-- Leistungen -->
-  <section id="leistungen" class="max-w-6xl mx-auto py-20 px-6">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">🚀 Leistungen</h2>
-    <div class="grid md:grid-cols-3 gap-8">
+        <div class="courses" style="margin-top:12px">
+          <article class="course">
+            <h3>1. Programmieren lernen mit Python</h3>
+            <p class="muted">Von den Grundlagen (Variablen, Kontrollstrukturen) bis zu Projektarbeit (Dateien, Module, einfache GUI oder Web-Skripte).</p>
+            <p class="small">Ideal für Einsteiger und für die Vorbereitung auf das Abitur / Informatik LK.</p>
+            <div style="margin-top:8px"><span class="course-badge">Dauer: 60–90 min</span> <a class="alt tryme" href="#termin">Jetzt buchen</a></div>
+          </article>
 
-      <!-- Card 1 -->
-      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-3">🧹 Datenbereinigung</h3>
-        <p class="text-gray-600">
-          Saubere Daten sind die Basis jeder Analyse. Ich bereinige und strukturiere deine Excel- oder CSV-Dateien mit Python – für klare Ergebnisse.
-        </p>
-      </div>
+          <article class="course">
+            <h3>2. Grundverständnis von IT</h3>
+            <p class="muted">Wie funktioniert ein Computer? CPU, RAM, Speicher, Ein-/Ausgabe, sowie Binärsprache und Zahlensysteme leicht erklärt.</p>
+            <div style="margin-top:8px"><span class="course-badge">Format: Erklär- & Übungssitzung</span> <a class="alt tryme" href="#termin">Jetzt buchen</a></div>
+          </article>
 
-      <!-- Card 2 -->
-      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-3">📊 Dashboards</h3>
-        <p class="text-gray-600">
-          Aussagekräftige Visualisierungen und interaktive Dashboards mit Python, Plotly oder Power BI – verständlich, klar und direkt nutzbar.
-        </p>
-      </div>
+          <article class="course">
+            <h3>3. Grundverständnis vom Internet</h3>
+            <p class="muted">Schichten-Modell (OSI/TCP-IP), wie Daten geroutet werden, was APIs sind und wie das Web technisch funktioniert.</p>
+            <div style="margin-top:8px"><span class="course-badge">Praxisbeispiele & Diagramme</span> <a class="alt tryme" href="#termin">Jetzt buchen</a></div>
+          </article>
 
-      <!-- Card 3 -->
-      <div class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-3">🎓 Workshops</h3>
-        <p class="text-gray-600">
-          Komplexe Themen einfach erklärt: Ich halte verständliche Workshops zu KI & Datenanalyse – für Teams, Startups oder Bildungseinrichtungen.
-        </p>
-      </div>
+          <article class="course">
+            <h3>4. Crash-Kurs Künstliche Intelligenz & Machine Learning</h3>
+            <p class="muted">Grundbegriffe: Supervised / Unsupervised Learning, neuronale Netze, einfache Hands-on Beispiele (kein umfangreiches Mathe-Vorauswissen nötig).</p>
+            <div style="margin-top:8px"><span class="course-badge">Kurz & kompakt</span> <a class="alt tryme" href="#termin">Jetzt buchen</a></div>
+          </article>
+        </div>
+      </section>
 
-    </div>
-  </section>
+      <section class="card" id="termin">
+        <h2>Terminbuchung</h2>
+        <p class="small">Du kannst einen Termin direkt online buchen. Zwei Optionen sind vorbereitet — wähle die, die dir lieber ist:</p>
 
-  <!-- Kontakt -->
-  <section id="kontakt" class="bg-blue-50 py-20 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-gray-800 mb-6">📬 Kontakt</h2>
-      <p class="text-gray-600 mb-6">
-        Lust auf ein Projekt oder Fragen zu meinen Leistungen? Schreib mir einfach eine Nachricht:
-      </p>
-      <a href="mailto:niklaskoch4@googlemail.com" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
-        Email schreiben
-      </a>
-    </div>
+        <div class="booking-grid" style="margin-top:12px">
+          <div>
+            <h3>1) Schnelle Direktbuchung (Fallback-Formular)</h3>
+            <form id="booking-form" action="https://formspree.io/f/your-form-id" method="POST">
+              <label for="name">Dein Name</label>
+              <input id="name" name="name" required />
 
-    <div class="max-w-3xl mx-auto text-center">
-      <p class="text-gray-600 mb-6">
-        Alternativ buchen Sie einfach einen passenden Termin im folgenden Kalender:
-      </p>
-      <iframe src="https://app.simplymeet.me/niklaskochds?is_widget=1&view=compact" style="width:100%; height:650px;" frameborder="1" scrolling="yes"></iframe>
-    </div>
-      
-  </section>
+              <label for="email">E‑Mail</label>
+              <input id="email" name="email" type="email" required />
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-6 text-center text-sm">
-    © 2025 Niklas Koch – Data Science Freelancer
-  </footer>
+              <label for="course">Kurs / Thema</label>
+              <select id="course" name="course">
+                <option>Programmieren mit Python</option>
+                <option>Grundverständnis von IT</option>
+                <option>Grundverständnis vom Internet</option>
+                <option>Crash-Kurs KI & ML</option>
+                <option>Anderes / individuelle Anfrage</option>
+              </select>
 
+              <div class="grid-2" style="margin-top:8px">
+                <div>
+                  <label for="date">Wunschdatum (z. B. 2025-10-01)</label>
+                  <input id="date" name="date" placeholder="YYYY-MM-DD" />
+                </div>
+                <div>
+                  <label for="time">Uhrzeit (z. B. 16:30)</label>
+                  <input id="time" name="time" placeholder="HH:MM" />
+                </div>
+              </div>
+
+              <label for="message" style="margin-top:8px">Weitere Informationen / Nachricht</label>
+              <textarea id="message" name="message" rows="4" placeholder="z. B. Schulform, aktuelles Niveau, Prüfungsdatum"></textarea>
+
+              <p class="muted small">Hinweis: Ersetze die FormAction-URL (https://formspree.io/...) durch deine eigene Formspree-Endpoint oder dein Zapier/Make/Server-Endpunkt.</p>
+              <button class="btn" type="submit" style="margin-top:10px">Anfrage senden</button>
+            </form>
+
+            <hr style="margin:14px 0;border:none;border-top:1px solid rgba(255,255,255,0.02)" />
+
+            <h3>2) Kalender-Integration (empfohlen)</h3>
+            <p class="small muted">Wenn du Calendly, Acal or Simplybook verwendest, ersetze die Embed-URL unten durch deinen persönlichen Link.</p>
+            <!-- Calendly embed placeholder: ersetze data-url mit deinem Calendly-Link -->
+            <div id="calendly-embed" style="min-height:420px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.03)">
+              <iframe id="cal-iframe" src="https://calendly.com/your-username/30min?embed_domain=example.com&embed_type=Inline" style="width:100%;height:420px;border:0"></iframe>
+            </div>
+          </div>
+
+          <aside class="card" style="align-self:start">
+            <h3>Details & Preise</h3>
+            <p class="muted">Standard-Sitzung: 60 Minuten — Preis: &nbsp;<strong>auf Anfrage</strong>.</p>
+            <p class="small">Rabatte möglich bei Paketbuchungen (z. B. 5×60min). Präsenztermine nach Aufwand (Anfahrt) oder online per Zoom/Meet.</p>
+
+            <h4 style="margin-top:12px">Was ich brauche</h4>
+            <ul class="small muted">
+              <li>Kurzbeschreibung des Problems / Themas</li>
+              <li>Klassenstufe & Prüfungsziel (z. B. Abitur 2026)</li>
+              <li>Wenn möglich: Screenshots / Aufgaben als PDF</li>
+            </ul>
+            <div style="margin-top:12px"><a class="alt" href="#kontakt">Alternative: Nachricht senden</a></div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="kontakt" class="card">
+        <h2>Kontakt</h2>
+        <p class="small muted">Schreibe mir eine Nachricht — oder nutze die Buchungsoptionen oben.</p>
+        <form action="mailto:your.email@example.com" method="GET" enctype="text/plain" style="margin-top:10px">
+          <label for="cname">Name</label>
+          <input id="cname" name="name" />
+          <label for="cemail">E‑Mail</label>
+          <input id="cemail" name="email" type="email" />
+          <label for="cmsg">Nachricht</label>
+          <textarea id="cmsg" name="message" rows="4"></textarea>
+          <button class="btn" type="submit" style="margin-top:10px">Nachricht senden</button>
+        </form>
+
+        <hr style="margin:14px 0;border:none;border-top:1px solid rgba(255,255,255,0.02)" />
+        <p class="small muted">Socials / Links: <br />
+        — GitHub: <a class="alt" href="#">github.com/deinprofil</a><br />
+        — LinkedIn: <a class="alt" href="#">linkedin.com/in/deinprofil</a></p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> [Dein Name] — Nachhilfe Informatik · Alle Rechte vorbehalten.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Kleines Script: aktuelles Jahr einfügen
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Optional: Interne Verlinkungen für Demo
+    document.querySelectorAll('a[href="#termin"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.getElementById('termin').scrollIntoView({behavior:'smooth'});}));
+  </script>
 </body>
 </html>
-
